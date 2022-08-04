@@ -1,0 +1,35 @@
+@mixin font($fs: 16px, $fw: 500, $lh: 1.2, $ls: 0.03em) {
+	font-size: $fs;
+	font-weight: $fw;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+
+@mixin mobile {
+	@media screen and (min-width: 480px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media screen and (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin retina {
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		@content;
+	}
+}
+
+@mixin transition($color, $fill, $background-color, $border) {
+	transition-property: $color, $fill, $background-color, $border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

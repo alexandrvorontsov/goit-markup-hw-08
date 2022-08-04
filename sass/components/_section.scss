@@ -1,0 +1,26 @@
+.section-group,
+.section-teams,
+.section-portflio,
+.section-clients {
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 94px;
+		padding-top: 94px;
+	}
+}
+
+.section-header {
+	background-color: var(--main-light-color);
+}
+
+.section-portflio {
+	background-color: var(--main-light-color);
+}
+
+.section-teams {
+	background-color: var(--badge-bg-color);
+}
+
+.section__footer {
+	background-color: var(--border-color);
+	padding: 60px 0;
+}
